@@ -12,7 +12,8 @@ class ProductsController extends Controller
         $this->model = $model;
     }
 
-    public function index(){
+    public function index()
+    {
         $this->render(['table' => $this->model->getTableName()]);
     }
 

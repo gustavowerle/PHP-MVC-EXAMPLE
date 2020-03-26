@@ -1,10 +1,8 @@
 <?php
 
-// use SON\Model;
-
 require __DIR__ . '/vendor/autoload.php';
 $router = require __DIR__ . '/router.php';
-$resolver = require __DIR__ . '/resolver.php';
+$resolver = new GW01\Resolver;;
 
 $object = $router->handler();
 

@@ -4,21 +4,20 @@ namespace GW01;
 
 class Model
 {
-
     private $pdo;
     protected $table;
     
-    public function __construct(\PDO $pdo = null)
+    public function __construct()
     {
-        $this->pdo = $pdo;  
+        require __DIR__ . '\..\connection.php';  
     }
 
-    // public function all()
-    // {
-    //     $sql = 'SELECT * FROM ' . $this->table;
-    //     $result = $this->getPdo()->query($sql);
-    //     return $result->fetch_all(MYSQLI_ASSOC);
-    // }
+    public function all()
+    {
+        $sql = 'SELECT * FROM users';
+        $result = $this->getPdo()->query($sql);
+        return $result;
+    }
 
     public function get()
     {

@@ -1,5 +1,5 @@
 # PHP-MVC-EXAMPLE
- MVC example using PHP.
+This project has an example of user authentication using PHP and MySQL. The structure is based on the MVC architecture.
 
  ## Structure:
 
@@ -7,11 +7,12 @@
 * __View__       -> /views
 * __Controller__ -> /app/Controllers
 * __Routes__ -> /router.php
+* __Database config.__ -> /connection.php
 
-## Features:
+## Technologies:
 
- **Render:**  Both parameters are optional. If the View is not informed it will be resolved by the name of the Controller.
- 
-```
-$this->render([data], '/dir/view');
-```
+ * PHP
+ * MySQL
+ * JQuery
+ * HTML
+ * CSS

@@ -9,6 +9,10 @@ class Router implements \ArrayAccess
     public function handler()
     {
         $path = $_SERVER['PATH_INFO'] ?? '/';
+
+        if ($path <> '/login' && $path <> '/session'){
+            require __DIR__ . '\..\session.php';
+        }
         //REMOVE A ULTIMA BARRA DA URL SE HOUVER PARA NÃO DUPLICAR ROTAS
         if (strlen($path > 1)){
             $path = rtrim($path, '/');
