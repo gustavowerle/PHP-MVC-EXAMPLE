@@ -7,7 +7,7 @@ This project has an example of user authentication using PHP and MySQL. The stru
 * __View__       -> /views
 * __Controller__ -> /app/Controllers
 * __Routes__ -> /router.php
-* __Database config.__ -> /connection.php
+* __Database config.__ -> /.env
 
 ## Technologies:
 
