@@ -22,7 +22,7 @@ $router['/logout'] = [
     'action' => 'logout'
 ];
 
-$router['/registro'] = [
+$router['/users'] = [
     'class' => App\Controllers\UsersController::class,
     'action' => 'create'
 ];
